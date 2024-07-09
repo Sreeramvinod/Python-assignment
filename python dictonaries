@@ -1,0 +1,84 @@
+{"cells":[{"cell_type":"markdown","id":"b5fabd6b","metadata":{"id":"b5fabd6b"},"source":["<a href=\"https://www.viharatech.com\"><img src=\"https://miro.medium.com/v2/resize:fit:828/format:webp/1*on2Bpj6A5gfd-CzaFOAZRA.jpeg\"></a>\n","\n","\n","- `Welcome to our interactive learning session! In this Jupyter notebook, you'll find a series of questions related to Python Dictionary Comprehension\n"," Concept. To maximize your learning, please write Python code in the 
+
+cell below each question and execute it. This hands-on practice will help reinforce your understanding of the concepts. Feel free to reach out if you have any questions or need assistance. 
+
+Happy coding! 💻🐍 `"]},{"cell_type":"markdown","id":"db689fc2","metadata":{"id":"db689fc2"},"source":["Question 1: Write a Python program to 
+
+create a dictionary of squares of numbers from 1 to 10 using dictionary comprehension.\n","\n","- `sample input : `\n","    - `var = 'python java'`\n","- `sample output :`\n","    - `result : 11`"]},{"cell_type":"code","execution_count":null,"id":"c9ce9180","metadata":{"id":"c9ce9180"},"outputs":[],"source":["# 
+
+Please write The solution Here for above question 1:\n","squares_dict={num:num**2 for num in range(1,11)}\n","print(squares_dict)\n","input_str='python java'\n","char_count=len(input_str)\n","print(\"result:\",char_count)"]},{"cell_type":"markdown","id":"46f069cc","metadata":{"id":"46f069cc"},"source":["Question 2: Write a Python program to create
+
+ a dictionary with keys as numbers from 1 to 10 and values as their squares using dictionary comprehension.\n","\n","\n","\n","\n","1.   List item\n","2.   List item\n","\n","\n","\n","- `sample input : `\n","    - `var = 'python'`\n","- `sample output :`\n","    - `result : nohtyp`"]},
+
+{"cell_type":"code","execution_count":null,"id":"2cde3dcc","metadata":{"id":"2cde3dcc"},"outputs":[],"source":["# Please write The solution Here for above question 2:\n","input_str='python'\n"
+
+,"reversed_str=input_str[::-1]\n","print(reversed_str)"]},{"cell_type":"markdown","id":"0f3a2ef5","metadata":{"id":"0f3a2ef5"},"source":["Question 3: Write a Python program to create a dictionary with keys as
+
+ letters from a given string and values as their frequencies using dictionary comprehension.\n","\n","\n","\n","\n","- `sample input : `\n","    - `var = 'NUN'`\n","- `sample output :`\n","    - `result : It is a Palindrome`\n","    \n","- `palindrome concept = https://www.dictionary.com/e/palindromic-word/#:~:text=A%20palindrome%20is%20a%20word
+
+,roots%20in%20the%20early%201600s.`"]},{"cell_type":"code","execution_count":null,"id":"74b9f01a","metadata":{"id":"74b9f01a"},"outputs":[],"source":["# Please write The solution 
+
+Here for above question 3:\n","from collections import Counter\n","input_str='NUN'\n","letter_freq_dict={letter:input_str.count(letter) for letter in input_str}\n","if
+
+ input_str==input_str[::-1]:\n","    result=\"It is a Palindrome\"\n","else:\n","   
+
+ result=\"It is not a Palindrome\"\n","print(\"result:\",result)\n"]},{"cell_type":"markdown","id":"98e0fc60","metadata":{"id":"98e0fc60"},"source":["Question 4: Write a Python program to create a dictionary 
+
+with keys as elements from a given list and values as their lengths using dictionary comprehension.
+
+\n","\n","\n","\n","\n","\n","- `sample input : `\n","    - `var = 'Hello world '`\n","- `sample output :`\n","    - `result : l, because l is repeating 3 times `"]},{"cell_type":"markdown","id":"17eb44eb",
+
+"metadata":{"id":"17eb44eb"},"source":["\n",
+
+"Question 5: Write a Python program to create a dictionary with keys as numbers from 1 to 10 and values as their even/odd status using dictionary comprehension\n","\n","- `sample input : `\n","    - `var1 = 'listen'`\n","    - `var2 = 'silent'`\n","- 
+
+`sample output :`\n","    - `result : both are anagram because characters in var2 is in var1`"]},{"cell_type":"code","execution_count":null,"id":"29f0e87e","metadata":{"id":"29f0e87e"},"outputs":[],"source":["# Please write The solution Here for above question 5:\n",
+
+"even_odd_dict={num:\"even\" if num%2==0 else \"odd\" for num in range(1,11)}\n","print(even_odd_dict)\n","var1='listen'\n",
+
+"var2='silent'\n","if sorted(var1)==sorted(var2):\n","    result=\"both are anagram because characters in var2 is in var1\"\n","else:\n","    result=\"not a anagram\"\n","print(\"result:\",result)\n"]},{"cell_type":"markdown","id":"fac17884","metadata":{"id":"fac17884"},"source":
+
+["Question 6: Write a Python program to create a dictionary with keys as words from a given sentence and values as their lengths using dictionary comprehension.\n","\n","\n","\n","- `sample input : `\n","    - `var = 'python'`\n","- `sample output :`\n","    - `result : pythn , because vowels are [AEIOUaeiou]`"]},{"cell_type":"code","execution_count":null,"id":"f4b33095","metadata":{"id":"f4b33095"},"outputs":[],"source":["# Please write The solution Here for above question 6:\n","input_sentence='python is amazing'\n","word_length_dict={word:len(word) for word in input_sentence.split()}\n","print(word_length_dict)\n","input_word='python'\n","output_word=''.join(char for char in input_word if char.lower() not in 'aeiou')\n","print(\"result:\",output_word)\n"]},
+
+{"cell_type":"markdown","id":"2170d6f4","metadata":{"id":"2170d6f4"},"source":["Question 7: Write a Python program to create a dictionary with keys as letters from the alphabet and values as their ASCII values using dictionary comprehension..\n","\n","- `sample input : `\n","    - `var = 'python is Easy Language'`\n",
+
+"- `sample output :`\n","    - `result : Language`"]},{"cell_type":"code","execution_count":null,"id":"f35de8b3","metadata":{"id":"f35de8b3"},"outputs":[],"source":["# Please write The solution Here for above question 7:\n",
+
+"input_str='python is Easy Language'\n","ascii_dict={char:ord(char) for char in input_str if char.isalpha()}\n","print(ascii_dict)\n","words=input_str.split()\n","language_word=[word for word in words if word.lower()=='language']\n","print(\"result:\",''.join(language_word))\n"]},{"cell_type":"markdown","id":"f349bdb7","metadata":{"id":"f349bdb7"},"source":["Question 8: Write a Python program to create a dictionary with keys as numbers from 1 to 10 and values 
+
+as their factorial using dictionary comprehension.\n","\n","\n","- `sample input : `\n","    - `var = 'python is easy'`\n","-
+
+ `sample output :`\n","    - `result : Python Is Easy`"]},{"cell_type":"code","execution_count":null,"id":"a1b4c4e6",
+
+"metadata":{"id":"a1b4c4e6"},"outputs":[],"source":["# Please write The solution Here for above question 8:\n","def factorial(n):\n"," 
+
+   if n==0:\n","        return 1\n","    else:\n","        
+
+return n*factorial(n-1)\n","factorial_dict={num:factorial(num) 
+
+for num in range(1,11)}\n","print(factorial_dict)\n","input_str='pythonis easy'\n","capitalized_str=input_str.title()\n","print
+
+(\"result:\",capitalized_str)\n"]},{"cell_type":"markdown","id":"d2770696","metadata":{"id":"d2770696"},"source":
+
+["Question 9: Write a Python program to create a dictionary with keys as elements from a given list and values as their counts using dictionary comprehension.\n","\n","\n","\n","- 
+
+`sample input : `\n","    - `var = 'sharuk khan'`\n","- `sample output :`\n","    - `result : {'s': 1, 'h': 2, 'a': 2, 'r': 1, 'u': 1, 'k': 2, ' ': 2, 'n': 1}`"]},{"cell_type":"code","execution_count":null,"id":"7fdc2e9c","metadata":{"id":"7fdc2e9c"},"outputs":[],"source":["# Please
+
+ write The solution Here for above question 9:\n","from collections import Counter\n","input_list='sharuk khan'\n","count_dict={char:input_list.count(char) for char in input_list}\n","print(\"result:\",count_dict)\n"]},
+
+{"cell_type":"markdown","id":"5c9a3f09","metadata":{"id":"5c9a3f09"},"source":
+
+["Question 10: Write a Python program to create a dictionary with keys as letters from a given string and values as their
+
+ positions using dictionary comprehension.\n","\n","- `sample input : `\n","    - `var = 'sharuk khan'`\n","- `sample output :`\n","    - `result : 464`\n"]},{"cell_type":"code","execution_count":null,"id":"57c0c30e","metadata":{"id":"57c0c30e"},
+
+"outputs":[],"source":["# Please write The solution Here for above question 10:\n","input_str='sharuk khan'\n","position_dict={char:index for index,char in enumerate(input_str)}\n","print(\"result:\",position_dict)\n"]}],
+
+"metadata":{"colab":{"provenance":[]},"kernelspec":{"display_name":"Python 3 (ipykernel)","language":"python","name":"python3"},
+
+"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python",
+
+"pygments_lexer":"ipython3","version":"3.11.5"}},"nbformat":4,
+
+"nbformat_minor":5}
+
